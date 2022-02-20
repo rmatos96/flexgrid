@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    font-family: 'Karla', sans-serif;
+}
+
+body{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: hsl(218, 22%, 67%);
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.card{
+    display: grid;
+    grid-template-rows:300px 300px ;
+    grid-template-columns:350px 350px;
+    grid-template-areas: 
+    'c c'
+    'm f';
+    box-shadow: 1px 1px 10px;
+}
+
+.cabeça{
+    background-color: rgb(255, 255, 255);
+    grid-area:c;
+    display: flex;
+    display: inline;
+    align-items: center;
+    padding-left: 80px;
+    padding-top: 60px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.htres{
+    align-content:center;
+    justify-content:center ;
+    color: hsl(71, 73%, 54%);
+    font-size: 20px;
+    
+}
+
+.corh2{
+    color: hsl(179, 62%, 43%);
+    font-size:30px;
+    font-weight: bold;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.para1{
+    font-size: 15px; 
+    color: hsl(202, 6%, 62%);
+}
+
+
+.meio{
+    background:hsl(179, 62%, 43%);
+    grid-area: m;
+    display: flex;
+    display: inline;
+    padding-top: 30px;
+    padding-left: 80px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.h1{
+    color: white;
+    font-size:45px ;
+    display: flex;
+}
+
+.pmonth{
+    display: inline-block;
+    font-size: 15px;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, 0.554);
+    margin-left: 20px;
+}
+
+.corpara{
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.btnflex{
+    display: flex;
+    justify-content:flex-start ;
+    padding-top:10px ;    
+}
+
+.btn{
+    background-color: hsl(71, 73%, 54%);
+    color:white ;
+    display: flex;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.btnflex button:hover{
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    color: cyan;
+}
+
+.fim{
+    background:hsla(179, 51%, 54%, 0.863);
+    grid-area: f;
+    display: flex;
+    display: inline;
+    padding-top: 30px;
+    padding-left: 60px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.cormain{
+    color: white;
+}
+
+.contain{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.para2{
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.651);
+}
